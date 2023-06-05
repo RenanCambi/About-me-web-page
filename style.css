@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
 }
 
 :root {
@@ -41,10 +43,6 @@ body {
     height: 100vh;
 }
 
-body * {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-}
 #container {
     width: 100%;
     max-width: 360px;
@@ -91,7 +89,7 @@ body * {
     width: 32px;
     height: 32px;
     background: var(--switch-bg-color);
-    border: 1px black;
+    border: 1px solid black;
     border-radius: 50%;
     background-image: var(--switch-bg-url);
     background-repeat: no-repeat;
