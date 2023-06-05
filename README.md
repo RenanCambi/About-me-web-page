@@ -11,7 +11,7 @@
 
 <br>
 <p align="center">
-  <img alt="About me web page" src="./github/Cover.jpg" width="100%">
+  <img alt="About me web page" src="./.github/Cover.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
