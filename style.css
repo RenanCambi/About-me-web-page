@@ -13,6 +13,7 @@
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/MoonStars.svg);
     --switch-bg-color: white;
+
 }
 
 .light {
@@ -24,6 +25,7 @@
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./assets/sun.svg);
     --switch-bg-color: whitesmoke;
+
 }
 
 body {
@@ -36,6 +38,7 @@ body {
     
     /*background: color image repeat position-size*/
     background: var(--bg-url) no-repeat top center /cover;
+    height: 100vh;
 }
 
 body * {
@@ -46,7 +49,7 @@ body * {
     width: 100%;
     max-width: 360px;
     height: 712px;
-    margin: 56px auto 0px;
+    margin: 56px auto 0;
     padding: 0 24px;
 }
 
