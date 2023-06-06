@@ -89,7 +89,7 @@ body {
     width: 32px;
     height: 32px;
     background: var(--switch-bg-color);
-    border: 1px solid black;
+    border: 1px solid var(--stroke-color);
     border-radius: 50%;
     background-image: var(--switch-bg-url);
     background-repeat: no-repeat;
@@ -97,14 +97,19 @@ body {
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    left: 0px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
 }
 
 .light #switch button {
-    right: 0px;
-    left: initial;
+    animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -172,4 +177,23 @@ footer {
     padding: 24px 0px;
     text-align: center;
     font-size: 14px;
+}
+
+/* animation */
+@keyframes slide-in{
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
